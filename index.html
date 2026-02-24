@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Leng Family</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #faf6f1;
+      --warm-white: #fffbf7;
+      --terracotta: #c17f59;
+      --terracotta-light: #e8c4b0;
+      --dusty-rose: #b87d7d;
+      --warm-brown: #6b5344;
+      --soft-shadow: 0 4px 20px rgba(107, 83, 68, 0.08);
+      --card-shadow: 0 8px 32px rgba(107, 83, 68, 0.12);
+      --radius: 16px;
+      --radius-sm: 10px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(160deg, var(--cream) 0%, var(--warm-white) 50%, #f5ebe0 100%);
+      min-height: 100vh;
+      color: var(--warm-brown);
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding: 2rem 0;
+    }
+
+    .family-name {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 600;
+      color: var(--warm-brown);
+      letter-spacing: 0.02em;
+      margin-bottom: 0.5rem;
+    }
+
+    .tagline {
+      font-weight: 300;
+      font-size: 1.1rem;
+      color: var(--dusty-rose);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+      justify-items: center;
+    }
+
+    .card {
+      background: var(--warm-white);
+      border-radius: var(--radius);
+      padding: 1.75rem;
+      width: 100%;
+      max-width: 340px;
+      box-shadow: var(--soft-shadow);
+      border: 1px solid rgba(193, 127, 89, 0.15);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--card-shadow);
+    }
+
+    .card-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--warm-brown);
+      margin-bottom: 0.25rem;
+    }
+
+    .card-age {
+      font-size: 0.85rem;
+      color: var(--terracotta);
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-role {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--terracotta-light), var(--dusty-rose));
+      color: var(--warm-white);
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+      letter-spacing: 0.03em;
+    }
+
+    .card-quote {
+      font-size: 0.95rem;
+      color: var(--warm-brown);
+      opacity: 0.9;
+      font-weight: 400;
+      line-height: 1.55;
+    }
+
+    .card-quote::before {
+      content: '"';
+      color: var(--terracotta-light);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2em;
+    }
+
+    .card-quote::after {
+      content: '"';
+      color: var(--terracotta-light);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2em;
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        padding: 1.5rem 1rem 3rem;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+      }
+
+      .card {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 class="family-name">The Leng Family</h1>
+      <p class="tagline">Meet the crew</p>
+    </header>
+
+    <div class="cards">
+      <article class="card">
+        <h2 class="card-name">Hoelon</h2>
+        <p class="card-age">50</p>
+        <span class="card-role">Papa</span>
+        <p class="card-quote">The captain of the ship.</p>
+      </article>
+
+      <article class="card">
+        <h2 class="card-name">Hsin</h2>
+        <p class="card-age">49</p>
+        <span class="card-role">Mimi</span>
+        <p class="card-quote">The heart of the family.</p>
+      </article>
+
+      <article class="card">
+        <h2 class="card-name">Fly</h2>
+        <p class="card-age">74</p>
+        <span class="card-role">Mahmah</span>
+        <p class="card-quote">A lifetime of experience</p>
+      </article>
+
+      <article class="card">
+        <h2 class="card-name">Xiao</h2>
+        <p class="card-age">21</p>
+        <span class="card-role">Eldest son</span>
+        <p class="card-quote">The trailblazer the others secretly follow.</p>
+      </article>
+
+      <article class="card">
+        <h2 class="card-name">Han</h2>
+        <p class="card-age">19</p>
+        <span class="card-role">Second son</span>
+        <p class="card-quote">Discipline, strength, and quiet confidence.</p>
+      </article>
+
+      <article class="card">
+        <h2 class="card-name">Jue</h2>
+        <p class="card-age">16</p>
+        <span class="card-role">Youngest daughter</span>
+        <p class="card-quote">The spark that keeps everyone on their toes.</p>
+      </article>
+    </div>
+  </div>
+</body>
+</html>
