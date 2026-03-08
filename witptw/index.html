@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WITPTW — What Is The Plan This Week</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #faf8f5;
+            --text: #1a1a1a;
+            --text-light: #555;
+            --accent: #8b4513;
+            --rule: #d4c5b0;
+            --max-w: 680px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Source Sans 3', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header {
+            max-width: var(--max-w);
+            margin: 0 auto;
+            padding: 60px 24px 40px;
+            border-bottom: 2px solid var(--text);
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.4rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 1.05rem;
+            color: var(--text-light);
+            font-weight: 300;
+            max-width: 520px;
+        }
+
+        header .author {
+            margin-top: 16px;
+            font-size: 0.9rem;
+            color: var(--accent);
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+
+        main {
+            max-width: var(--max-w);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .issue {
+            display: block;
+            padding: 32px 0;
+            border-bottom: 1px solid var(--rule);
+            text-decoration: none;
+            color: inherit;
+            transition: opacity 0.2s;
+        }
+
+        .issue:hover { opacity: 0.7; }
+
+        .issue-date {
+            font-size: 0.8rem;
+            color: var(--accent);
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+
+        .issue-title {
+            font-family: 'Lora', serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            letter-spacing: -0.01em;
+        }
+
+        .issue-excerpt {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            font-weight: 300;
+            line-height: 1.5;
+        }
+
+        footer {
+            max-width: var(--max-w);
+            margin: 0 auto;
+            padding: 40px 24px 60px;
+            font-size: 0.8rem;
+            color: var(--text-light);
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            header { padding: 40px 20px 30px; }
+            header h1 { font-size: 1.8rem; }
+            main { padding: 0 20px; }
+            .issue-title { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>What Is The Plan This Week</h1>
+        <p>A weekly macro meditation on markets, geopolitics, and the things that matter. Published every Sunday since 2016.</p>
+        <div class="author">Hoelon Leng</div>
+    </header>
+
+    <main>
+        <a class="issue" href="2026-03-09.html">
+            <div class="issue-date">9 March 2026</div>
+            <div class="issue-title">Everything Is Hitting at the Same Time</div>
+            <div class="issue-excerpt">War, jobs, credit, oil, AI disruption. Last week felt like the kind of week that changes the reference point for everything that follows. The muscle memory of buying dips and waiting for normal is being tested.</div>
+        </a>
+
+        <!-- Future issues go here, newest first -->
+        <!--
+        <a class="issue" href="2026-03-02.html">
+            <div class="issue-date">2 March 2026</div>
+            <div class="issue-title">Operation Epic Fury</div>
+            <div class="issue-excerpt">The question is not whether strikes happened. The question is whether markets treat this as another non-event or the start of something structurally different.</div>
+        </a>
+        -->
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Hoelon Leng &middot; <a href="/">lengleng.com</a> &middot; For the full edition with charts and infographics, email hoelon at lengleng dot com</p>
+    </footer>
+</body>
+</html>
