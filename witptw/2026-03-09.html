@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WITPTW — 9 March 2026 — Everything Is Hitting at the Same Time</title>
+    <meta name="description" content="War, jobs, credit, oil, AI disruption. A weekly macro meditation by Hoelon Leng.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #faf8f5;
+            --text: #1a1a1a;
+            --text-light: #555;
+            --accent: #8b4513;
+            --rule: #d4c5b0;
+            --quote-bg: #f0ebe4;
+            --max-w: 680px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Source Sans 3', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* NAV */
+        nav {
+            max-width: var(--max-w);
+            margin: 0 auto;
+            padding: 20px 24px;
+            font-size: 0.8rem;
+        }
+        nav a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        nav a:hover { text-decoration: underline; }
+
+        /* HEADER */
+        header {
+            max-width: var(--max-w);
+            margin: 0 auto;
+            padding: 20px 24px 36px;
+            border-bottom: 2px solid var(--text);
+        }
+
+        .date-line {
+            font-size: 0.8rem;
+            color: var(--accent);
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        header h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin-bottom: 12px;
+        }
+
+        .byline {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            font-weight: 300;
+        }
+
+        /* ARTICLE */
+        article {
+            max-width: var(--max-w);
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        article p {
+            font-size: 1.05rem;
+            margin: 20px 0;
+            font-weight: 300;
+        }
+
+        /* QUOTES */
+        .quote-block {
+            background: var(--quote-bg);
+            padding: 24px 28px;
+            margin: 32px 0;
+            border-left: 3px solid var(--accent);
+        }
+
+        .quote-block .quote-text {
+            font-family: 'Lora', serif;
+            font-style: italic;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .quote-block .quote-attr {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-weight: 400;
+        }
+
+        /* SECTION HEADERS */
+        h2 {
+            font-family: 'Lora', serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 44px 0 16px;
+            padding-top: 20px;
+            border-top: 1px solid var(--rule);
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin: 32px 0 12px;
+        }
+
+        /* CALENDAR ITEMS */
+        .cal-item {
+            margin: 12px 0;
+            font-size: 0.95rem;
+            font-weight: 300;
+        }
+        .cal-item strong {
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        /* TRACKER */
+        .tracker-item {
+            margin: 10px 0;
+            padding-left: 16px;
+            border-left: 2px solid var(--rule);
+            font-size: 0.95rem;
+            font-weight: 300;
+        }
+        .tracker-item .tag {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: #fff;
+            background: var(--accent);
+            padding: 1px 6px;
+            border-radius: 2px;
+            margin-left: 6px;
+            vertical-align: middle;
+        }
+        .tracker-item .tag.carried { background: #777; }
+
+        /* SEPARATOR */
+        .sep {
+            border: none;
+            border-top: 1px solid var(--rule);
+            margin: 40px 0;
+        }
+
+        /* SUBSCRIBE CTA */
+        .cta {
+            background: var(--quote-bg);
+            padding: 28px;
+            margin: 40px 0;
+            text-align: center;
+            border: 1px solid var(--rule);
+        }
+        .cta p {
+            font-family: 'Lora', serif;
+            font-size: 1rem;
+            margin: 0 0 8px;
+            font-weight: 400;
+        }
+        .cta .small {
+            font-family: 'Source Sans 3', sans-serif;
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-weight: 300;
+        }
+
+        /* SIGN OFF */
+        .signoff {
+            margin: 40px 0;
+            font-family: 'Lora', serif;
+            font-style: italic;
+            font-size: 1.05rem;
+        }
+
+        /* CHART FIGURES */
+        .chart-figure {
+            margin: 32px 0;
+        }
+        .chart-figure img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 1px solid var(--rule);
+        }
+        .chart-figure figcaption {
+            font-family: 'Lora', serif;
+            font-style: italic;
+            font-size: 0.9rem;
+            color: var(--text-light);
+            line-height: 1.5;
+            margin-top: 12px;
+        }
+        .chart-figure figcaption strong {
+            font-weight: 700;
+            color: var(--text);
+            font-style: normal;
+        }
+
+        /* FOOTER */
+        footer {
+            max-width: var(--max-w);
+            margin: 0 auto;
+            padding: 30px 24px 60px;
+            font-size: 0.8rem;
+            color: var(--text-light);
+            border-top: 1px solid var(--rule);
+        }
+        footer a { color: var(--accent); text-decoration: none; }
+
+        /* MOBILE */
+        @media (max-width: 600px) {
+            header { padding: 16px 20px 28px; }
+            header h1 { font-size: 1.7rem; }
+            article { padding: 0 20px; }
+            .quote-block { padding: 18px 20px; }
+            h2 { font-size: 1.3rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav><a href="/witptw/">&larr; All Issues</a></nav>
+
+<header>
+    <div class="date-line">9 March 2026</div>
+    <h1>Everything Is Hitting at the Same Time</h1>
+    <div class="byline">By Hoelon Leng</div>
+</header>
+
+<article>
+
+    <!-- QUOTES -->
+    <div class="quote-block">
+        <div class="quote-text">"We're not at war with Iran. We're making sure that they do not have the capability to harm us anymore."</div>
+        <div class="quote-attr">— Markwayne Mullin, Trump's pick to lead the Department of Homeland Security, who then told reporters he misspoke. His predecessor Noem was fired over a $220 million ad campaign featuring herself on horseback. The department created after 9/11 to protect the homeland is shut down, leaderless, and its incoming chief cannot say if the country is at war.</div>
+    </div>
+
+    <div class="quote-block">
+        <div class="quote-text">"The sinews of war are infinite money."</div>
+        <div class="quote-attr">— Cicero. One week in, the US has lost $1.9 billion in military equipment across Qatar, UAE, Kuwait, and Bahrain. Tanker freight has doubled. War risk insurance has surged. Gulf states are reviewing hundreds of billions in US investment commitments. The sinews are stretching.</div>
+    </div>
+
+    <div class="quote-block">
+        <div class="quote-text">"If you gave Democrats a chance to sell dollar bills for 50 cents, they would try to pass a law that made it happen before just doing it."</div>
+        <div class="quote-attr">— Mark Cuban on <a href="https://www.youtube.com/watch?v=UzMDJEXcFCI" target="_blank" style="color:var(--accent)">Firing Line with Margaret Hoover</a>. Cuban is waging a one-man war on the US healthcare system through Cost Plus Drugs, a pharmacy that publishes every price, marks up 15%, and spends zero on marketing. Four years in, they are still the only pharmacy in America that publishes a price list.</div>
+    </div>
+
+    <!-- SCENE SETTER CHARTS -->
+    <figure class="chart-figure">
+        <img src="images/nfp-bloomberg.png" alt="US Employers Unexpectedly Cut Jobs, Unemployment Rises — Bloomberg chart showing change in nonfarm payrolls and unemployment rate through February 2026">
+        <figcaption>US employers unexpectedly cut jobs. February payrolls fell <strong>92,000</strong> against expectations of +59,000. Unemployment rose to <strong>4.4%</strong>. The labour market stabilisation narrative just broke. Source: Bureau of Labor Statistics via Bloomberg.</figcaption>
+    </figure>
+
+    <figure class="chart-figure">
+        <img src="images/hormuz-reuters.png" alt="Daily tankers passing through Strait of Hormuz — Reuters chart showing traffic collapse to near zero after US-Israel-Iran war begins">
+        <figcaption>About a fifth of the world's oil and gas supply passes through the Strait of Hormuz. Traffic collapsed to near zero after the war began. Brent went from <strong>$72 to $90</strong> in five days. Source: LSEG Data, Reuters.</figcaption>
+    </figure>
+
+    <!-- SCENE SETTER -->
+    <p>The first week of Operation Epic Fury delivered exactly what last Sunday's letter warned about: oil spiked, the Strait of Hormuz shut down, and the market had to decide whether this was a headline event or a structural break. The answer came fast. Brent went from $72 to $90 in five days. Tanker traffic through Hormuz collapsed from 50 vessels a day to near zero. Iran struck US bases across the Gulf, destroying $1.9 billion in military equipment and killing six American soldiers at Camp Arifjan. Three F-15E Strike Eagles were lost to friendly fire from Kuwaiti air defences. Friday's payrolls confirmed the other half of the picture. The economy lost 92,000 jobs against expectations of +59,000. Unemployment rose to 4.4%. War and recession risk arriving in the same week is not a drill.</p>
+
+    <!-- WITPTW -->
+    <h2>What is the plan this week?</h2>
+
+    <p>Everything is hitting at the same time. War, jobs, credit, oil, AI disruption. Last week felt like the kind of week that changes the reference point for everything that follows. The muscle memory of buying dips and waiting for normal is being tested by a market where multiple shocks are compounding rather than resolving. The Strait of Hormuz is effectively closed. Brent rose 30% in a single week. Qatar shut gas liquefaction entirely and says it needs two weeks to restart even if the war ended today. Saudi Arabia and UAE are running out of storage. Iraq may be forced to cut 3 million barrels a day. This is not a war premium. This is systemic fragility.</p>
+
+    <p>The US economy lost 92,000 jobs in February while the market expected a gain. Unemployment rose to 4.4%. Participation collapsed. Average hourly earnings came in at 3.8%, above expectations. Falling employment and rising wages at the same time. That is stagflation. Atlanta Fed cut its Q1 GDP tracker from 3.0% to 2.1% on the same day.</p>
+
+    <p>I found it hard to write this week. Not because of the uncertainty, that is our job, but because of how the war is being conducted in public. The administration broadcasting military operations on social media like a content strategy is something I cannot get used to. Ben Stiller came out and said he did not give permission for Tropic Thunder clips to be used in what amounts to war propaganda. When actors have to publicly distance themselves from a real war because the government turned it into a meme, something has broken. I do not know what the right word is. Brazen. Unseemly. It does not matter which side you stand on.</p>
+
+    <p>Markets weakened but were far from capitulation. S&P down 2%, Dow down 3%, all within a few percent of highs. VIX spiked to 28 twice and came back. The real pain was in Asia. South Korea saw double digit moves in both directions. India, Japan, and China are directly exposed through Hormuz dependency. UK Gilt yields rose 40 basis points, doubling the US Treasury move. The shock is not hitting evenly. It is hitting the most exposed and least flexible hardest.</p>
+
+    <p>The dollar was bid but this is not safe haven buying. It is the mechanical unwinding of funding trades and hedged equity positions. Popular FX positions must have unwound substantially last week. The structural weakness view is intact but the positioning is cleaner now. The DXY made new highs after the terrible jobs data on Friday then reversed to new lows after Trump demanded unconditional surrender. Political risk cuts both ways on the dollar.</p>
+
+    <p>CPI on Wednesday is the last data point before the Fed goes into blackout for March 18. It will not include the oil spike. Neither will Friday's PCE. Both are pre-war snapshots. But the -92K jobs print cannot be ignored alongside them. The pre-war inflation data and the post-war reality are pulling in opposite directions and the Fed has to sit with that tension in silence for two weeks.</p>
+
+    <p>G7 finance ministers meet in France. Three Gulf states are jointly reviewing force majeure clauses on contracts, including hundreds of billions pledged to US investments. If they pull back, the financial pressure on Washington to find an off ramp becomes real. BlackRock capped withdrawals from its $26 billion private credit fund after shareholders requested 9.3%. A major asset manager marked a loan to zero that was at par weeks ago. That is not liquidity. That is valuation. The marks were wrong. Private credit was the canary before the war. The war and stagflation fears are revealing weakness.</p>
+
+    <p>I do not have strong conviction this week and I think that is the right posture. Duration is the word and it is the right one. If this resolves in weeks, the damage is absorbable. If it extends into April, the compounding of oil, credit stress, and labour market deterioration creates something much harder to reverse. Stay close to the screen. Let the market tell you what it is doing.</p>
+
+    <!-- WILLW -->
+    <h2>What Did I Learn Last Week?</h2>
+
+    <div class="cal-item"><strong>Mar 2:</strong> Markets opened to war. Brent +9%. ISM manufacturing beat at 52.4 but prices paid surged to 70.5, highest since June 2022. Ras Tanura hit by drone.</div>
+    <div class="cal-item"><strong>Mar 3:</strong> Hormuz collapsed to near zero traffic. Maersk suspended all cargo. Trump cut off all trade with Spain. Iraq cut Rumaila by 700K bpd. Qatar shut downstream production.</div>
+    <div class="cal-item"><strong>Mar 4:</strong> Two Sessions opened. China growth target 4.5 to 5%, lowest since 1991. $1.9 billion in US military equipment destroyed. Six soldiers killed at Camp Arifjan.</div>
+    <div class="cal-item"><strong>Mar 5:</strong> Trump fired Noem over $220M vanity ads. Named Mullin as DHS replacement. Macron updated France's nuclear doctrine for first time in 30 years. SoftBank seeking $40B loan for OpenAI.</div>
+    <div class="cal-item"><strong>Mar 6:</strong> NFP -92K vs +55K expected. Unemployment 4.4%. BlackRock gated private credit fund. Oracle cutting thousands. Stargate talks with OpenAI broke down. Trump demanded unconditional surrender.</div>
+    <div class="cal-item"><strong>Mar 7:</strong> Fed blackout begins. Atlanta Fed cut Q1 GDP from 3.0% to 2.1%. Russia providing Iran intelligence to target US warships. Qatar oil minister: weeks to months to normalise even if war ends today.</div>
+
+    <!-- WTLOFW -->
+    <h2>What To Look Out For Next Week</h2>
+
+    <div class="cal-item"><strong>Mon Mar 9:</strong> China February CPI and PPI. Japan wages. Pakistan holds rates. Baden-Württemberg election. F1 opens in Melbourne. US/South Korea Freedom Shield drills begin.</div>
+    <div class="cal-item"><strong>Tue Mar 10:</strong> Saudi Aramco Q4 earnings, the most consequential corporate report of the week. China Jan-Feb trade data. Japan Q4 GDP revised. Oracle reports.</div>
+    <div class="cal-item"><strong>Wed Mar 11:</strong> US February CPI (core exp. +0.2%), the week's main event and last data before Fed blackout. Germany CPI. US 10-year note auction ($39B). G7 finance ministers convene in France.</div>
+    <div class="cal-item"><strong>Thu Mar 12:</strong> India February CPI. Turkey rate decision with oil at $90. US 30-year bond auction ($22B). China Two Sessions concludes. ASEAN economic ministers in Manila.</div>
+    <div class="cal-item"><strong>Fri Mar 13:</strong> US January core PCE deflator (exp. +0.4%, YoY to 3.1%). Q4 GDP second estimate. UMich sentiment captures first days of war. Sovereign ratings: Italy, Greece, Saudi Arabia, Qatar.</div>
+    <div class="cal-item"><strong>All week:</strong> Aramco, Oracle, HPE, BMW, Porsche, Volkswagen, Daimler Truck, Rheinmetall, CATL, Cambricon, Dollar General, Ulta Beauty. Fed blackout ahead of March 18.</div>
+
+    <!-- REGIMES -->
+    <h2>Regimes</h2>
+
+    <div class="tracker-item">Stagflation replaces flight to safety as the dominant regime. Last week bonds rallied even as PPI came in hot. This week oil +30%, jobs -92K, and 2yr yields spiking across US, UK, Germany. The flight to safety bid is losing to inflation fear. Central banks are stuck. <span class="tag">changed</span></div>
+
+    <div class="tracker-item">Dollar structurally weak but mechanically bid. Last week DXY stalled at 98. This week rallied to 99.70 on position unwinds before reversing on Trump's unconditional surrender demand. Range 98.45 to 99.70. When the unwind completes, the structural view reasserts. <span class="tag carried">held</span></div>
+
+    <div class="tracker-item">Credit stress was building before the war. Now it is accelerating. BlackRock, Blackstone, Blue Owl all gating. Leveraged loans falling across sectors. AI disruption hitting software credit. Oil hitting everything else. <span class="tag">new</span></div>
+
+    <h3>Shifts (if → then)</h3>
+
+    <div class="tracker-item">War extends beyond March → oil through $100. Gulf states invoke force majeure on US investments. Central banks pause all easing. <span class="tag">new</span></div>
+    <div class="tracker-item">CPI prints hot Wednesday → stagflation hardens into Fed blackout. Dollar extends bid. Replaces last week's Hot NFP shift, which fired. <span class="tag">new</span></div>
+    <div class="tracker-item">War finds off ramp within two weeks → oil retreats, rate cut hopes snap back, dip buyers vindicated. But credit damage and labour weakness do not reverse as fast. <span class="tag">new</span></div>
+    <div class="tracker-item">Gulf sovereigns pull back US investments → financial pressure on Washington to negotiate. <span class="tag">new</span></div>
+
+    <h3>Tails</h3>
+
+    <div class="tracker-item">Hormuz closed through April. $150 oil. Everything correlates. <span class="tag carried">carried</span></div>
+    <div class="tracker-item">Private credit contagion. Gating spreads beyond the big three. CLO machine stalls. <span class="tag">new</span></div>
+    <div class="tracker-item">Russia providing Iran targeting intelligence on US warships draws direct US-Russia confrontation. War scope expands. <span class="tag">new</span></div>
+
+    <h3>Beyond Next Week</h3>
+
+    <div class="tracker-item">Fed meeting Mar 17-18. Updated dot plot and projections. First meeting since the war and NFP collapse.</div>
+    <div class="tracker-item">ECB meeting Mar 18-19. Rate hike by year end now more likely than a cut. Lagarde has to address the energy shock.</div>
+    <div class="tracker-item">G7 finance ministers output from this week's France meeting will shape the diplomatic and financial response into late March.</div>
+
+    <!-- CAMBRICON / CHINA AI -->
+    <figure class="chart-figure">
+        <img src="images/cambricon-foxconn-bloomberg.png" alt="Cambricon and Foxconn Industrial net income projections showing earnings going vertical from AI demand — Bloomberg chart">
+        <figcaption>China's AI hardware story is about earnings going vertical. Cambricon from <strong>near-zero to 7 billion yuan</strong> by 2027. Foxconn Industrial from <strong>20 billion to 70 billion</strong>. The divergence between US AI sentiment (fading) and China AI sentiment (accelerating) is a trade in itself. Source: Bloomberg.</figcaption>
+    </figure>
+
+    <hr class="sep">
+
+    <!-- CTA -->
+    <div class="cta">
+        <p>The full edition includes 35+ curated charts and infographics with commentary.</p>
+        <div class="small">For the complete visual edition, email hoelon at lengleng dot com</div>
+    </div>
+
+    <!-- SIGN OFF -->
+    <div class="signoff">
+        Best,<br>Hoelon
+    </div>
+
+</article>
+
+<footer>
+    <p>&copy; 2026 Hoelon Leng &middot; <a href="/witptw/">&larr; All Issues</a> &middot; <a href="/">lengleng.com</a></p>
+</footer>
+
+</body>
+</html>
